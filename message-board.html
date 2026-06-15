@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>青春留言板</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="phone-page board-page">
+      <div class="board-particles" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <header class="board-topbar">
+        <a class="back-link" href="./index.html" aria-label="返回首页">‹</a>
+        <h1>青春留言板</h1>
+        <span></span>
+      </header>
+
+      <section class="board-bento" aria-label="青春留言板说明">
+        <div class="board-hero">
+          <p>湖南青年说 · 青春留言板</p>
+          <h2>给今天的自己留一句话</h2>
+          <span>写下真实想法，通过留言确认即可获得积分赠送。</span>
+        </div>
+
+      </section>
+
+      <form class="message-form" id="message-form">
+        <div class="form-heading">
+          <strong>投递留言</strong>
+          <span id="message-count">0/120</span>
+        </div>
+
+        <label for="message-name">你的署名</label>
+        <input id="message-name" name="name" type="text" placeholder="例如：追风青年" required />
+
+        <label for="message-content">留言内容</label>
+        <textarea
+          id="message-content"
+          name="content"
+          rows="5"
+          maxlength="120"
+          placeholder="可以写给青春、朋友、未来，或者此刻正在努力的自己"
+          required
+        ></textarea>
+
+        <button class="submit-message" type="submit">发布留言，领取积分</button>
+        <p class="message-feedback" id="message-feedback" aria-live="polite"></p>
+      </form>
+
+      <section class="message-board-group" aria-label="最新留言">
+        <div class="message-section-title">
+          <h2>最新留言</h2>
+        </div>
+
+        <div class="message-list" aria-label="留言列表">
+          <article>
+            <strong>追风青年</strong>
+            <p>愿每一次认真生活，都能成为未来闪闪发光的证据。</p>
+          </article>
+          <article>
+            <strong>小湘</strong>
+            <p>今天也要读一篇好文章，把热爱攒成积分和勇气。</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <nav class="tabbar" aria-label="底部导航">
+      <a href="./index.html"><span>⌂</span>首页</a>
+      <a href="#"><span>□</span>频道</a>
+      <a class="active" href="#"><span>☆</span>活动</a>
+      <a href="#"><span>○</span>个人</a>
+    </nav>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

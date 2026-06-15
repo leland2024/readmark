@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>湖南青年说</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="phone-page">
+      <header class="topbar">
+        <a class="points" href="./points-ledger.html" aria-label="查看我的积分流水">
+          <span class="coin-stack" aria-hidden="true"></span>
+          <span>积分:958</span>
+        </a>
+        <h1>湖南青年说</h1>
+        <button class="page-share" type="button" aria-label="分享湖南青年说" aria-controls="share-modal">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </header>
+
+      <section class="hero" aria-label="首页轮播图">
+        <div class="hero-art">
+          <div class="book book-one"></div>
+          <div class="book book-two"></div>
+          <div class="book book-three"></div>
+        </div>
+        <div class="hero-copy">
+          <strong>阅读提示</strong>
+          <span>文末点赞 在看</span>
+          <small>攒互动积分 / 换文创好礼</small>
+        </div>
+        <div class="dots" aria-hidden="true">
+          <span></span>
+          <span class="active"></span>
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+
+      <section class="checkin-card" aria-label="阅读签到">
+        <div class="checkin-main">
+          <strong>连续阅读第4天</strong>
+          <span>当前倍率*4</span>
+          <small>今日阅读：2篇，预计获得8积分</small>
+        </div>
+        <a class="read-button" href="#recommend">立即阅读</a>
+      </section>
+
+      <section class="notice">
+        <span class="bell" aria-hidden="true"></span>
+        <p>用户更改微信后，积分数会保留在原微信号</p>
+        <span class="chevron" aria-hidden="true"></span>
+      </section>
+
+      <nav class="quick-links" aria-label="快捷入口">
+        <a href="#">
+          <span class="quick-icon wechat">微</span>
+          <span>最新推文</span>
+        </a>
+        <a href="#">
+          <span class="quick-icon video">▶</span>
+          <span>最新视频</span>
+        </a>
+        <a href="#">
+          <span class="quick-icon weibo">眼</span>
+          <span>最新微博</span>
+        </a>
+      </nav>
+
+      <section class="feature-grid" aria-label="频道入口">
+        <a href="#">
+          <span class="round-img img-one"></span>
+          <span>补给站</span>
+        </a>
+        <a href="./tinglang-treehole.html">
+          <span class="round-img img-two"></span>
+          <span>听浪·树洞</span>
+        </a>
+        <a href="#">
+          <span class="round-img img-three"></span>
+          <span>微宣讲</span>
+        </a>
+        <a href="./message-board.html">
+          <span class="round-img img-four"></span>
+          <span>青春留言板</span>
+        </a>
+      </section>
+
+      <section class="recommend" id="recommend">
+        <h2>最新推荐</h2>
+        <div class="banner">
+          <div class="banner-art"></div>
+          <div>
+            <strong>阅读提示</strong>
+            <span>文末点赞 在看</span>
+          </div>
+        </div>
+
+        <article class="story">
+          <div class="thumb">湖南青年说</div>
+          <div class="story-body">
+            <h3>“妈妈，弟弟怎么半夜学狗叫？”7岁姐姐一句话，救了弟弟一命</h3>
+            <p>公众号 2026-06-05</p>
+          </div>
+          <strong>积分+2</strong>
+        </article>
+
+        <article class="story">
+          <div class="thumb">湖南青年说</div>
+          <div class="story-body">
+            <h3>“国家不让你胖”，也没让你瘦啊</h3>
+            <p>公众号 2026-06-05</p>
+          </div>
+          <strong>积分+2</strong>
+        </article>
+      </section>
+    </main>
+
+    <nav class="tabbar" aria-label="底部导航">
+      <a class="active" href="#"><span>⌂</span>首页</a>
+      <a href="#"><span>□</span>频道</a>
+      <a href="#"><span>☆</span>活动</a>
+      <a href="#"><span>○</span>个人</a>
+    </nav>
+
+    <a class="floating-activity floating-activity--points" href="./points-activity.html" aria-label="积分最新活动">
+      <span class="floating-copy">积分最新活动</span>
+    </a>
+
+    <div class="share-modal" id="share-modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-share></div>
+      <section class="share-dialog" role="dialog" aria-modal="true" aria-labelledby="share-title">
+        <div class="particle-field" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <button class="modal-close" type="button" aria-label="关闭分享弹窗" data-close-share>×</button>
+        <div class="system-mark" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <p class="modal-kicker">湖南青年说</p>
+        <h2 id="share-title">分享有礼</h2>
+        <p class="modal-message">当日第一次分享并有1位以上好友阅读，即可获得5积分</p>
+        <button class="modal-action" type="button">立即分享</button>
+      </section>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
