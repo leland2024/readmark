@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>湖南青年说分享页</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="phone-page share-landing-page">
+      <header class="board-topbar">
+        <a class="back-link" href="./index.html" aria-label="返回首页">‹</a>
+        <h1>湖南青年说</h1>
+        <span></span>
+      </header>
+
+      <section class="share-landing-hero">
+        <p>好友邀请你来看看</p>
+        <h2>阅读青年故事，互动也能攒积分</h2>
+        <span>完成注册后即可参与阅读、留言、分享等积分活动。</span>
+      </section>
+
+      <section class="share-register-card">
+        <span class="invite-badge">新用户福利</span>
+        <h2>注册湖南青年说账号</h2>
+        <p>你还没有注册平台。完成注册后，即可获得积分奖励，并解锁最新积分活动。</p>
+        <a class="register-action" href="./index.html">立即注册领取积分</a>
+      </section>
+
+      <section class="share-benefit-grid" aria-label="注册后可参与">
+        <article>
+          <strong>阅读签到</strong>
+          <span>连续阅读可享倍率积分</span>
+        </article>
+        <article>
+          <strong>互动留言</strong>
+          <span>审核通过后积分到账</span>
+        </article>
+        <article>
+          <strong>分享活动</strong>
+          <span>好友访问也能获积分</span>
+        </article>
+      </section>
+
+      <a class="activity-cta" href="./points-activity.html">查看最新积分活动</a>
+
+      <div class="share-modal registered-modal" id="registered-activity-modal" aria-hidden="true">
+        <div class="modal-backdrop" data-close-registered></div>
+        <section class="share-dialog" role="dialog" aria-modal="true" aria-labelledby="registered-title">
+          <div class="particle-field" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <button class="modal-close" type="button" aria-label="关闭弹窗" data-close-registered>×</button>
+          <div class="system-mark" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <p class="modal-kicker">湖南青年说</p>
+          <h2 id="registered-title">有最新积分活动</h2>
+          <p class="modal-message">你已注册平台，可以直接进入积分活动页面查看最新规则和奖励。</p>
+          <a class="modal-action" href="./points-activity.html">进入积分活动页面</a>
+        </section>
+      </div>
+    </main>
+
+    <nav class="tabbar" aria-label="底部导航">
+      <a class="active" href="./index.html"><span>⌂</span>首页</a>
+      <a href="#"><span>□</span>频道</a>
+      <a href="./points-activity.html"><span>☆</span>活动</a>
+      <a href="#"><span>○</span>个人</a>
+    </nav>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

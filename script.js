@@ -11,6 +11,8 @@ const waveForm = document.querySelector("#wave-form");
 const waveFeedback = document.querySelector("#wave-feedback");
 const waveModal = document.querySelector("#wave-modal");
 const waveCloseButtons = document.querySelectorAll("[data-close-wave]");
+const registeredActivityModal = document.querySelector("#registered-activity-modal");
+const registeredCloseButtons = document.querySelectorAll("[data-close-registered]");
 
 function setShareModal(open) {
   shareModal.classList.toggle("is-open", open);
@@ -79,5 +81,22 @@ if (waveModal) {
       waveModal.setAttribute("aria-hidden", "true");
       document.body.classList.remove("modal-open");
     });
+  });
+}
+
+if (registeredActivityModal) {
+  const registeredParams = new URLSearchParams(window.location.search);
+  const setRegisteredModal = (open) => {
+    registeredActivityModal.classList.toggle("is-open", open);
+    registeredActivityModal.setAttribute("aria-hidden", String(!open));
+    document.body.classList.toggle("modal-open", open);
+  };
+
+  if (registeredParams.get("registered") === "1") {
+    window.setTimeout(() => setRegisteredModal(true), 280);
+  }
+
+  registeredCloseButtons.forEach((button) => {
+    button.addEventListener("click", () => setRegisteredModal(false));
   });
 }
